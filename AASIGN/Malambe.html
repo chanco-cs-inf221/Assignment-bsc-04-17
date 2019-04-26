@@ -1,0 +1,81 @@
+<!-- This is the baobab fruit page. Tha naming "malambe" in some places has been done deleberately -->
+<!-- To increase curiosity for others -->
+<!-- After viewing the the page one can can navigate to other pages easily -->
+
+<HTML>
+    <head>
+    
+        <title>MALAMBE - The Baobab Fruit</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+
+
+
+        <LINK REL = "STYLESHEET" HREF = "Malambe.css">
+    </head>
+    <!-- developing a single line -->
+    
+    <BODY>
+        <div id="header">
+         <h1 ALIGN = "CENTER">Welcome to the MALAMBE section</h1>        
+ 
+        </div>
+        
+        <div id="nav_bar">
+                <ul>
+                    <li><a href=Home.html>Return to Home Page</a></li>
+                    <li><a href=Nthochi.html>Go to Banana Page</a></li>
+                    <li><a href=Peyala.html>Go to Avocado Page</a></li>
+                    <li><a href="http://gmailcom/bsc-04-17@cc.ac.mw">Email</a></li>
+                </ul>
+           </div>
+
+
+
+        
+        <div>
+                <p id="benefits">Click the BUTTON to see the  PROOVEN health benefits of BAOBAB fruit</p>
+                <button onclick="View()">View_Health_Benefits</button>
+                
+
+                 
+
+                <div class="my_images">
+                    <img width="100%" class="mySlides" src="Malambe.jpg"height="500">
+                    <img width="100%" class="mySlides" src="Malambe2.jpg"height="500">
+                    <img width="100%" class="mySlides" src="Malambe3.jpg"height="500">
+                </div>
+                
+
+
+                <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+
+                
+                        function View(){
+                            var health_benefits="Some research has found that adding baobab to your diet may be beneficial if you’re looking to drop a few extra pounds.It can help curb cravings and promote feelings of fullness, helping you eat less and lose weight.One small study in 20 people showed that drinking a smoothie with 15 grams of baobab extract significantly reduced feelings of hunger compared to a placebo drink While most fruit consists primarily of carbohydrate, avocado is high in healthy fats.Avocados do not contain any cholesterol or sodium and are low in saturated fat-Avocados are very high in potassium - Several studies show that having a high potassium intake is linked to reduced blood pressure, which is a major risk factor for heart attacks, strokes and kidney failure   ";
+                            document.getElementById("benefits").innerHTML=health_benefits;
+                        }
+                    </script>
+    
+
+        </div>
+           
+        
+    </BODY>
+    
+    </HTML>

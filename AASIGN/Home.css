@@ -1,0 +1,101 @@
+body{
+    background-color: aquamarine;
+    margin: 10px;
+    font-size: 20px;
+}
+
+#header{
+    background:chartreuse;
+    margin: 10px;
+    height: 150;
+}
+#nav_bar{
+    background-color: darkgoldenrod;
+    margin: 10px;
+    height: 35;
+    border-radius: 5px;
+    font-weight: bolder; font-size: 25;
+    
+}
+#pic{
+    margin-top: 0px;
+    padding: 0px;
+    float: left;
+}
+
+
+#nav_bar ul{ 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+#nav_bar li{ 
+    display: inline;
+    padding: 15px;
+    vertical-align: middle;
+}
+#nav_bar a{
+    text-decoration: none;
+    padding: 8px 8px 8px 8px;
+    color: white;
+    vertical-align: middle;
+}
+#nav_bar a:hover{
+    color: red;
+    background-color: white;
+
+}
+
+.main{
+    background-color: rgb(215, 228, 220);
+    margin-right: 320px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10;
+
+    border-radius: 5px;
+    padding:20px;
+    font-size: 110%;
+}
+h2{
+    color: blue;
+    font-size: 120%;
+}
+.side_bar{
+    background-color: rgb(215, 228, 220);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 10;
+    border-radius: 5px;
+    padding:20px;
+    font-size: 100%;
+    float:right;
+    width: 260px;
+}
+.images{ 
+    background-color: rgb(215, 228, 220);
+    margin-right: 10px;margin-left: 10px;
+    margin-top: 0px;margin-bottom: 10;
+    border-radius: 5px;
+    float:right;
+    border-radius: 5px;
+    float:right;
+    width: 300px;
+    clear: right;
+    opacity: 1.0;
+    transition: opacity 0.5s ease-in-out;
+
+}
+#footer{
+    background-color: aquamarine;
+    margin: 10px;
+    height: 100;
+    clear: both;
+    border-radius: 5px;
+
+}
+.images:hover{
+    opacity: 0.4;
+}

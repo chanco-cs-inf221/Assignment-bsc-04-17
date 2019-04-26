@@ -1,0 +1,79 @@
+<!-- This is the Banana page. It presents images of banana and the price on one image -->
+<!-- It also has a link to all the other pages -->
+
+
+<HTML>
+        <head>
+        
+            <title>NTHOCHI - The Banana Fruit</title>
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+
+
+
+            <LINK REL = "STYLESHEET" HREF = "Malambe.css">
+        </head>
+        
+        
+        <BODY>
+            <div id="header">
+             <h1 ALIGN = "CENTER">Welcome to the BANANA section</h1>        
+             
+            </div>
+            
+            <div id="nav_bar">
+                    <ul>
+                        <li><a href=Home.html>Return to Home Page</a></li>
+                        <li><a href=Malambe.html>Go to Malambe Page</a></li>
+                        <li><a href=Peyala.html>Go to Avocado Page</a></li>
+                    </ul>
+               </div>
+    
+    
+    
+            
+            <div>
+                <p id="benefits">Click the BUTTON to see the  PROOVEN health benefits of bananas</p>
+                <button onclick="View()">View_Health_Benefits</button>
+              
+
+
+
+                <div class="my_images">
+                    <img width="100%" class="mySlides" src="Nthochi And Peyala.jpg"height="500"> 
+                    <img width="100%" class="mySlides" src="Banana2.jpg"height="500">
+                    <img width="100%" class="mySlides" src="Banana3.jpg"height="500">
+                </div>
+                
+
+
+                <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+
+      
+               
+                    function View(){
+                        var health_benefits="Bananas are rich in pectin, a type of fiber that gives the flesh its spongy structural form - Unripe bananas contain resistant starch, which acts like soluble fiber and escapes digestion- Both pectin and resistant starch may moderate blood sugar levels after meals and reduce appetite by slowing the emptying of your stomach  ";
+                        document.getElementById("benefits").innerHTML=health_benefits;
+                    }
+                </script>
+            </div>
+               
+            
+        </BODY>
+        
+        </HTML>
